@@ -65,15 +65,15 @@ const CEOMessage = () => {
             style={{ fontFamily: theme.fonts.body }}
           >
             <p>
-              Peace International Law Firm began as a vision that, over more than 11 years of dedication, persistence, and excellence, has transformed into one of the most respected and recognized legal institutions in Lahore and internationally. What started as a conventional law practice has evolved into a modern, research-oriented, and technology-driven firm offering comprehensive legal solutions.
+             Peace International law firm One a dream has been structured into a reality. This has taken an enduring over 11 years of conviction and untiring efforts to see it grow into a leading Law Firm with one of biggest market clientage within the country especially in Lahore and abroad. The Firm has seen transformation from conventional to state of art and highly Mechanized & scientific Litigation.
             </p>
             
             <p>
-              The firm stands distinguished by its commitment to professionalism, client satisfaction, and continuous growth. With a team united by integrity and purpose, Peace International Law Firm provides expeditious, precise, and effective legal services. Each case is treated as a valuable research opportunity, allowing the firm to craft innovative strategies and deliver successful results.
+              Its an Era of Scientific achievement, where hearts and minds are controlled by machines but significance of Law is essence of all Eras till infinite, as per current Era is concerned we stand firm to maintain our composure through expeditious & dedicated services to our clients, we feel relaxed when we busy working hard.
             </p>
             
             <p>
-              While technology defines the modern era, the firm upholds the timeless importance of law as the foundation of justice and societal balance.
+              Peace law firm is cleansed from Bossy atmosphere and its administrative affairs are controlled with sense of responsibility and realization of each member of Team. Peace law is Primarily a legal Research Institute/Organization thus each and every brief of case is considered as research material and all efforts and struggles are use to achieve successful results for our clients.
             </p>
           </div>
 
