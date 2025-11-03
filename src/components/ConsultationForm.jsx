@@ -24,7 +24,7 @@ const ConsultationForm = () => {
   };
 
   return (
-    <div className="relative px-6 lg:px-12">
+    <div className="relative px-6 lg:px-22">
       {/* Mobile: Center + Normal flow, Desktop: Right side + Negative margin */}
       <div className="max-w-[1920px] mx-auto mt-0 lg:-mt-[450px] xl:-mt-[500px]">
         <div className="bg-white rounded-xl shadow-2xl p-8 md:p-10 lg:p-12 max-w-full md:max-w-lg lg:max-w-xl mx-auto lg:ml-auto lg:mr-0">
