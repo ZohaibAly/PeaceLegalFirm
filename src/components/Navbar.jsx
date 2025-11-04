@@ -12,10 +12,13 @@ const Navbar = () => {
   const toggleService = () => setIsServiceOpen(!isServiceOpen);
 
   const serviceItems = [
-    { name: 'Corporate Law', path: '/services/corporate-law' },
-    { name: 'International Trade', path: '/services/international-trade' },
-    { name: 'Legal Consulting', path: '/services/legal-consulting' },
-    { name: 'Contract Drafting', path: '/services/contract-drafting' },
+    { name: 'Criminal Law', path: '/services/corporate-law' },
+    { name: 'Company Law', path: '/services/international-trade' },
+    { name: 'Civil Law', path: '/services/legal-consulting' },
+    { name: 'Property Law', path: '/services/contract-drafting' },
+    { name: 'Family Law', path: '/services/international-trade' },
+    { name: 'Banking Law', path: '/services/legal-consulting' },
+    { name: 'Corporate Law/NOC', path: '/services/contract-drafting' },
   ];
 
   return (

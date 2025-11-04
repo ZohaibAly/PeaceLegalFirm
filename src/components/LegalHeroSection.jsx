@@ -20,7 +20,7 @@ const LegalHeroSection = () => {
           <div className="max-w-2xl py-12 md:py-16 lg:py-20 text-white md:text-left text-center">
             {/* Small Orange Text */}
             <p 
-              className="text-sm sm:text-base mb-3 sm:mb-4"
+              className="text-[16px] sm:text-[18px] mb-3 sm:mb-4"
               style={{ 
                 color: theme.colors.secondary,
                 fontFamily: theme.fonts.body
@@ -31,7 +31,7 @@ const LegalHeroSection = () => {
             
             {/* Main Heading */}
             <h1 
-              className="text-3xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-bold mb-6 sm:mb-8 md:mb-10 leading-tight"
+              className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-6 sm:mb-8 md:mb-10 "
               style={{ fontFamily: theme.fonts.heading }}
             >
               Right Partner for Your Legal Needs
