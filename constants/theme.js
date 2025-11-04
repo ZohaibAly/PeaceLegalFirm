@@ -4,7 +4,7 @@ export const theme = {
     secondary: "#ff751f",
   },
   fonts: {
-    heading: '"Playfair", serif',
+    heading: '"Playfair Display", serif',
     body: "Poppins",
   },
 };

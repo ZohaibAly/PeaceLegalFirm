@@ -39,7 +39,8 @@ const HeroSection = () => {
             style={{
               fontFamily: theme.fonts.heading,
               color: 'white',
-              fontSize: 'clamp(2rem, 5vw, 4rem)'
+              fontSize: 'clamp(2rem,5vw, 5rem)',
+             
             }}
           >
             Peace <span style={{ color: theme.colors.secondary }}>International Law</span>
