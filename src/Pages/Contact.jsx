@@ -1,7 +1,7 @@
 import React from "react";
 
 
-const OurLawyerPage = () => {
+const ContactPage = () => {
   return (
     <>
     
@@ -9,4 +9,4 @@ const OurLawyerPage = () => {
   );
 };
 
-export default OurLawyerPage;
+export default ContactPage;

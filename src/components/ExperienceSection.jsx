@@ -1,5 +1,5 @@
 import React from 'react';
-//import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { theme } from '../../constants/theme';
 import ExpSection from '../assets/images/ExpSectionImg.png';
 import BusAlly from '../assets/images/business-ally.png';
@@ -40,14 +40,14 @@ const ExperienceSection = () => {
           <p className="text-gray-600 text-base md:text-lg max-w-3xl mx-auto mb-8" style={{ fontFamily: theme.fonts.body }}>
             Peace Law offer deep expertise and proven results in handling complex legal cases, delivering reliable and effective solutions tailored to your needs.
           </p>
-   
+   <Link to='/Contact-us'>
           <button 
-            className="px-8 py-4 rounded-full text-white font-semibold text-sm md:text-base uppercase tracking-wider hover:opacity-90 transition-opacity"
+            className="px-8 py-4 rounded-full text-white font-semibold text-sm md:text-base uppercase tracking-wider hover:opacity-70 transition-opacity cursor-pointer"
             style={{ backgroundColor: theme.colors.secondary, fontFamily: theme.fonts.body }}
           >
-            GET A FREE CONSULTATION
+            GET FREE CONSULTATION
           </button>
-       
+       </Link>
         </div>
 
         {/* Orange Stats Card with Actual Background Image */}

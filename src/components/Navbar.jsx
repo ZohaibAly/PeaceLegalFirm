@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import { theme } from '../../constants/theme';
 import Logo from '../assets/images/website-logo.png';
@@ -7,6 +7,7 @@ import Logo from '../assets/images/website-logo.png';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isServiceOpen, setIsServiceOpen] = useState(false);
+  const location = useLocation(); // Current route ko track karne ke liye
 
   const toggleMenu = () => setIsOpen(!isOpen);
   const toggleService = () => setIsServiceOpen(!isServiceOpen);
@@ -20,6 +21,9 @@ const Navbar = () => {
     { name: 'Banking Law', path: '/services/legal-consulting' },
     { name: 'Corporate Law/NOC', path: '/services/contract-drafting' },
   ];
+
+  // Check if current path is a service page
+  const isServiceActive = serviceItems.some(item => location.pathname === item.path);
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 px-4 md:px-8 lg:px-12 pt-4 md:pt-6">
@@ -40,8 +44,8 @@ const Navbar = () => {
               to="/" 
               className="px-6 py-2 rounded-full transition-all duration-300"
               style={{ 
-                backgroundColor: theme.colors.secondary,
-                color: 'white',
+                backgroundColor: location.pathname === '/' ? theme.colors.secondary : 'transparent',
+                color: location.pathname === '/' ? 'white' : theme.colors.primary,
                 fontFamily: theme.fonts.body,
                 fontWeight: '500'
               }}
@@ -54,7 +58,7 @@ const Navbar = () => {
               <button 
                 className="flex items-center space-x-1 transition-colors duration-300 font-medium hover:text-orange-500"
                 style={{ 
-                  color: theme.colors.primary,
+                  color: isServiceActive ? theme.colors.secondary : theme.colors.primary,
                   fontFamily: theme.fonts.body
                 }}
               >
@@ -73,7 +77,8 @@ const Navbar = () => {
                     className="block px-6 py-3 hover:bg-gray-50 transition-colors duration-200 first:rounded-t-lg last:rounded-b-lg"
                     style={{ 
                       fontFamily: theme.fonts.body,
-                      color: theme.colors.primary
+                      color: location.pathname === item.path ? theme.colors.secondary : theme.colors.primary,
+                      fontWeight: location.pathname === item.path ? '600' : 'normal'
                     }}
                   >
                     {item.name}
@@ -83,10 +88,10 @@ const Navbar = () => {
             </div>
 
             <Link 
-              to="/lawyers" 
+              to="/Our-Lawyers" 
               className="transition-colors duration-300 font-medium hover:text-orange-500"
               style={{ 
-                color: theme.colors.primary,
+                color: location.pathname === '/Our-Lawyers' ? theme.colors.secondary : theme.colors.primary,
                 fontFamily: theme.fonts.body
               }}
             >
@@ -94,10 +99,10 @@ const Navbar = () => {
             </Link>
 
             <Link 
-              to="/contact" 
+              to="/Contact-us" 
               className="transition-colors duration-300 font-medium hover:text-orange-500"
               style={{ 
-                color: theme.colors.primary,
+                color: location.pathname === '/Contact-us' ? theme.colors.secondary : theme.colors.primary,
                 fontFamily: theme.fonts.body
               }}
             >
@@ -149,8 +154,8 @@ const Navbar = () => {
               onClick={toggleMenu}
               className="px-6 py-3 rounded-full text-center font-medium"
               style={{ 
-                backgroundColor: theme.colors.secondary,
-                color: 'white',
+                backgroundColor: location.pathname === '/' ? theme.colors.secondary : 'transparent',
+                color: location.pathname === '/' ? 'white' : theme.colors.primary,
                 fontFamily: theme.fonts.body
               }}
             >
@@ -163,7 +168,7 @@ const Navbar = () => {
                 onClick={toggleService}
                 className="w-full flex items-center justify-between px-6 py-3 font-medium"
                 style={{ 
-                  color: theme.colors.primary,
+                  color: isServiceActive ? theme.colors.secondary : theme.colors.primary,
                   fontFamily: theme.fonts.body
                 }}
               >
@@ -189,7 +194,8 @@ const Navbar = () => {
                     className="block px-12 py-2 hover:bg-gray-50"
                     style={{ 
                       fontFamily: theme.fonts.body,
-                      color: theme.colors.primary
+                      color: location.pathname === item.path ? theme.colors.secondary : theme.colors.primary,
+                      fontWeight: location.pathname === item.path ? '600' : 'normal'
                     }}
                   >
                     {item.name}
@@ -199,11 +205,11 @@ const Navbar = () => {
             </div>
 
             <Link 
-              to="/lawyers" 
+              to="/Our-Lawyers" 
               onClick={toggleMenu}
               className="px-6 py-3 font-medium"
               style={{ 
-                color: theme.colors.primary,
+                color: location.pathname === '/Our-Lawyers' ? theme.colors.secondary : theme.colors.primary,
                 fontFamily: theme.fonts.body
               }}
             >
@@ -211,11 +217,11 @@ const Navbar = () => {
             </Link>
 
             <Link 
-              to="/contact" 
+              to="/Contact-us" 
               onClick={toggleMenu}
               className="px-6 py-3 font-medium"
               style={{ 
-                color: theme.colors.primary,
+                color: location.pathname === '/Contact-us' ? theme.colors.secondary : theme.colors.primary,
                 fontFamily: theme.fonts.body
               }}
             >

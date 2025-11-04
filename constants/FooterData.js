@@ -13,8 +13,8 @@ export const footerData = {
       links: [
         { text: "Home", href: "/" },
         { text: "Services", href: "/products" },
-        { text: "Our Lawyers", href: "/contact-us" },
-        { text: "Get Free Consultation", href: "/faq" },
+        { text: "Our Lawyers", href: "/Our-Lawyers" },
+        { text: "Get Free Consultation", href: "/Contact-us" },
       ],
     },
     {

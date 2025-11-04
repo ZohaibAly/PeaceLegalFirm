@@ -62,7 +62,7 @@ const HeroSection = () => {
 
           {/* CTA Button */}
           <Link 
-            to="/contact"
+            to="/Contact-us"
             className="inline-flex items-end space-x-3 px-8 py-4 rounded-sm transition-all duration-300 group"
             style={{
               backgroundColor: theme.colors.secondary,
