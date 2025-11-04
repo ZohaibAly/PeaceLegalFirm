@@ -2,17 +2,27 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import { theme } from '../../constants/theme';
-import HeroBg from '../assets/images/Hero-sec.png';
 
 const HeroSection = () => {
   return (
-    <section 
-      className="relative w-full min-h-screen flex items-center bg-cover bg-center bg-no-repeat pt-28"
-      style={{
-        backgroundImage: `url(${HeroBg})`,
-      }}
-    >
-      <div className="max-w-[1920px] w-full mx-auto px-6 lg:px-12 py-20">
+    <section className="relative w-full min-h-screen flex items-center overflow-hidden pt-28">
+      {/* Background Video */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute top-0 left-0 w-full h-full object-cover"
+      >
+        <source src="/video/HeroBgVideo.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      {/* Overlay for better text readability (optional) */}
+      <div className="absolute top-0 left-0 w-full h-full"></div>
+
+      {/* Content */}
+      <div className="relative z-10 max-w-[1920px] w-full mx-auto px-6 lg:px-12 py-20">
         <div className="max-w-4xl md:ps-20">
           {/* Main Heading */}
           <h1 
@@ -77,9 +87,9 @@ const HeroSection = () => {
       </div>
 
       {/* Optional: Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2  rounded-full flex items-start justify-center p-2"
-        style={{color:theme.colors.secondary}}>
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce z-10">
+        <div className="w-6 h-10 border-2 rounded-full flex items-start justify-center p-2"
+        style={{borderColor: theme.colors.secondary}}>
           <div 
             className="w-1 h-2 rounded-full"
             style={{ backgroundColor: theme.colors.secondary }}

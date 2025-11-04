@@ -76,7 +76,7 @@ const LegalHeroSection = () => {
                     className="text-sm sm:text-base md:text-lg ml-1"
                     style={{ fontFamily: theme.fonts.body }}
                   >
-                    We prioritize understanding your needs and building long-term trust.
+                    We prioritize understanding your needs and building long term trust.
                   </span>
                 </div>
               </li>
