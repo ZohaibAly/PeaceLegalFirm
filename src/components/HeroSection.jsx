@@ -23,9 +23,9 @@ const HeroSection = () => {
 
       {/* Bottom Shadow Gradient - YE NAYA ADD KIYA */}
       <div 
-        className="absolute bottom-0 left-0 w-full h-1/2 pointer-events-none"
+        className="absolute bottom-0 left-0 w-full h-2/3 pointer-events-none"
         style={{
-          background: 'linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 50%, transparent 100%)',
+          background: 'linear-gradient(to top, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.6) 50%, transparent 100%)',
           zIndex: 5
         }}
       ></div>
@@ -71,7 +71,7 @@ const HeroSection = () => {
               border: 'none'
             }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.backgroundColor = '#ff8c3d';
+              e.currentTarget.style.backgroundColor = theme.colors.secondary;
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.backgroundColor = theme.colors.secondary;
