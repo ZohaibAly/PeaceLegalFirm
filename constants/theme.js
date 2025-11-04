@@ -4,7 +4,7 @@ export const theme = {
     secondary: "#ff751f",
   },
   fonts: {
-    heading: '"Montserrat", sans-serif',
+    heading: '"Playfair", serif',
     body: "Poppins",
   },
 };
