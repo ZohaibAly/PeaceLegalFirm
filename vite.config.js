@@ -6,7 +6,9 @@ import tailwind from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [
     react({
-   
+       babel: {
+        plugins: ['styled-jsx/babel'], 
+      },
     }),
     tailwind(),
   ],

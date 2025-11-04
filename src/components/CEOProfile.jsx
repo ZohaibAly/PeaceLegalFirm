@@ -142,7 +142,7 @@ const CEOMessage = () => {
       </div>
 
       {/* ✅ custom media query for 800px */}
-      <style jsx>{`
+      <style >{`
         @media (min-width: 800px) {
           .custom800\\:flex-row { flex-direction: row !important; }
           .custom800\\:items-start { align-items: flex-start !important; }
