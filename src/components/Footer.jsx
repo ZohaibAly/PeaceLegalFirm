@@ -19,9 +19,10 @@ const handleSubscribe = (e) => {
           {/* Logo & Description */}
           <div className="col-span-2 md:col-span-3 lg:col-span-2 lg:pr-8">
             <img
-              className="w-[200px] h-25 object-contain mb-6"
+              className="w-auto h-25 object-contain mb-4"
               src={logoSrc || FooterLogo}
               alt="Logo"
+               
             />
 
             <p className="text-[16px] leading-relaxed text-gray-700"
