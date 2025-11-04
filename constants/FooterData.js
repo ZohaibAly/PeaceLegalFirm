@@ -37,7 +37,7 @@ export const footerData = {
   // newsletter copy (optional)
   newsletter: {
     placeholder: "Enter your email",
-    buttonText: "Subscribe",
+    buttonText: "Stay Informed",
     action: "/contact-us",
   },
   contactEmail: "Ranaalmasadv@gmail.com",

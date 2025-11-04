@@ -95,12 +95,12 @@ const handleSubscribe = (e) => {
                    fontFamily: theme.fonts.heading,
                    color: theme.colors.primary
                  }}>
-                Subscribe To Newsletter
+                Join Our Legal Community
               </p>
               
               <p className="text-sm text-gray-600 mb-5"
                  style={{fontFamily: theme.fonts.body}}>
-                Get latest updates and offers
+                Get valuable updates on immigration laws, legal rights, and upcoming firm events - straight to your inbox
               </p>
 
                <form onSubmit={handleSubscribe}>
