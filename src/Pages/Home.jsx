@@ -7,6 +7,7 @@ import ExperienceSection from "../components/ExperienceSection";
 import PracticeAreasSlider from "../components/PracticeAreasSlider";
 import LegalHeroSection from "../components/LegalHeroSection";
 import ItalianLegalServices from "../components/ItalianLegalServices";
+import PeaceTimeLine from '../components/PeaceLawTimeline';
 const HomePage = () => {
   return (
     <>
@@ -18,6 +19,7 @@ const HomePage = () => {
       <ExperienceSection/>
       <LegalHeroSection/>
       <ItalianLegalServices/>
+      <PeaceTimeLine/>
     </>
   );
 };
