@@ -31,12 +31,12 @@ const ExperienceSection = () => {
         {/* Top Section */}
         <div className="text-center mb-12">
           <div className="w-24 h-1 mx-auto mb-6" style={{ backgroundColor: theme.colors.secondary }}></div>
-          
+          <b>
           <h1 className="text-4xl md:text-5xl lg:text-6xl mb-6" style={{ fontFamily: theme.fonts.heading, color: theme.colors.primary }}>
             10 Years Of Experience In<br />
             Legal <span style={{ color: theme.colors.secondary }}>Cases Field</span>
           </h1>
-          
+          </b>
           <p className="text-gray-600 text-base md:text-lg max-w-3xl mx-auto mb-8" style={{ fontFamily: theme.fonts.body }}>
             Peace Law offer deep expertise and proven results in handling complex legal cases, delivering reliable and effective solutions tailored to your needs.
           </p>

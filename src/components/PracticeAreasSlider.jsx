@@ -97,7 +97,7 @@ const PracticeAreasSlider = () => {
   }, [slides.length]);
 
   return (
-    <div className="w-full bg-gray-50 py-12 md:py-20">
+    <div className="w-full py-12 md:py-20">
       <div className="w-full max-w-[1450px] mx-auto px-4">
         <div className="relative">
           {/* Slider Container */}
