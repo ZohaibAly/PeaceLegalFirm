@@ -4,6 +4,7 @@ import ConsultationForm from '../components/ConsultationForm';
 import CEOProfile from "../components/CEOProfile";
 import PracticeAreas from "../components/PracticeAreas";
 import PracticeAreasSlider from "../components/PracticeAreasSlider";
+import LegalHeroSection from "../components/LegalHeroSection";
 const HomePage = () => {
   return (
     <>
@@ -12,6 +13,7 @@ const HomePage = () => {
       <CEOProfile/>
       <PracticeAreas/>
       <PracticeAreasSlider/>
+      <LegalHeroSection/>
     </>
   );
 };
