@@ -40,13 +40,13 @@ const ContactInfoSection = () => {
 
   return (
     <div
-      className="w-full min-h-[380px] flex flex-wrap items-center justify-center py-12 px-4 gap-8"
+      className="w-full min-h-[380px] flex flex-wrap items-start justify-center py-12 px-4 gap-8"
       style={{ backgroundColor: theme.colors.secondary }}
     >
       {contactData.map((item, index) => (
         <div
           key={index}
-          className="flex flex-col items-center text-center text-white max-w-[280px] px-6 py-8"
+          className="flex flex-col items-center text-center text-white max-w-[280px] px-6 py-8 h-full"
         >
           {/* Icon */}
           <div className="mb-6">

@@ -106,7 +106,7 @@ const Navbar = () => {
                 fontFamily: theme.fonts.body
               }}
             >
-              CONTACT
+              Get Free Consultation
             </Link>
           </div>
 
