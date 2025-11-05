@@ -1,26 +1,26 @@
-import React, { useState } from 'react';
-import { theme } from '../../constants/theme';
+import React, { useState } from "react";
+import { theme } from "../../constants/theme";
 
 const ConsultationForm = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    immigration: '',
-    legalType: '',
-    message: ''
+    name: "",
+    email: "",
+    phone: "",
+    immigration: "",
+    legalType: "",
+    message: "",
   });
 
   const handleChange = (e) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
+    console.log("Form submitted:", formData);
   };
 
   return (
@@ -29,17 +29,23 @@ const ConsultationForm = () => {
       <div className="max-w-[1920px] mx-auto mt-0 lg:-mt-[450px] xl:-mt-[500px]">
         <div className="bg-white rounded-xl shadow-2xl p-8 md:p-10 lg:p-12 max-w-full md:max-w-lg lg:max-w-xl mx-auto lg:ml-auto lg:mr-0">
           {/* Form Heading - Premium Design */}
-          <div className="mb-8 pb-6 border-b-2" style={{ borderColor: theme.colors.secondary }}>
-            <h2 
+          <div
+            className="mb-8 pb-6 border-b-2"
+            style={{ borderColor: theme.colors.secondary }}
+          >
+            <h2
               className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight"
-              style={{ 
+              style={{
                 fontFamily: theme.fonts.heading,
-                color: theme.colors.primary 
+                color: theme.colors.primary,
               }}
             >
-              Get a Free <span style={{ color: theme.colors.secondary }}>Consultation</span>
+              Get a Free{" "}
+              <span style={{ color: theme.colors.secondary }}>
+                Consultation
+              </span>
             </h2>
-            <p 
+            <p
               className="text-sm mt-2 text-gray-600"
               style={{ fontFamily: theme.fonts.body }}
             >
@@ -147,7 +153,7 @@ const ConsultationForm = () => {
               className="w-full py-4 rounded-lg font-bold text-white transition-all duration-300 hover:shadow-xl transform hover:-translate-y-0.5 text-base tracking-wide"
               style={{
                 backgroundColor: theme.colors.secondary,
-                fontFamily: theme.fonts.body
+                fontFamily: theme.fonts.body,
               }}
             >
               SUBMIT FORM TODAY
