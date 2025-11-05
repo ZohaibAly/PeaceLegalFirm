@@ -3,7 +3,7 @@ import ContactInfoSection from "../components/ContactInfoSection";
 import Breadcrumb from "../components/Breadcrumb";
 import ContactFormSection from "../components/ContactFormSection";
 import CourthouseBackground from "../components/CourthouseBackground";
-const ContactPage = () => {
+const GetFreeConsultationPage = () => {
   return (
     <>
     <Breadcrumb/>
@@ -14,4 +14,4 @@ const ContactPage = () => {
   );
 };
 
-export default ContactPage;
+export default GetFreeConsultationPage;

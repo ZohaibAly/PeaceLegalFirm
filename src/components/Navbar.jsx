@@ -13,8 +13,8 @@ const Navbar = () => {
   const toggleService = () => setIsServiceOpen(!isServiceOpen);
 
   const serviceItems = [
-    { name: 'Criminal Law', path: '/services/corporate-law' },
-    { name: 'Company Law', path: '/services/international-trade' },
+    { name: 'Criminal Law', path: 'services/Criminal-Law' },
+    { name: 'Company Law', path: 'services/Company-Law' },
     { name: 'Civil Law', path: '/services/legal-consulting' },
     { name: 'Property Law', path: '/services/contract-drafting' },
     { name: 'Family Law', path: '/services/international-trade' },
@@ -99,10 +99,10 @@ const Navbar = () => {
             </Link>
 
             <Link 
-              to="/Contact-us" 
+              to="/Get-Free-Consultation" 
               className="transition-colors duration-300 font-medium hover:text-orange-500"
               style={{ 
-                color: location.pathname === '/Contact-us' ? theme.colors.secondary : theme.colors.primary,
+                color: location.pathname === '/Get-Free-Consultation' ? theme.colors.secondary : theme.colors.primary,
                 fontFamily: theme.fonts.body
               }}
             >

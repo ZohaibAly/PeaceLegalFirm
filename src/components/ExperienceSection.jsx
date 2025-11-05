@@ -56,7 +56,7 @@ const ExperienceSection = () => {
             complex legal cases, delivering reliable and effective solutions
             tailored to your needs.
           </p>
-          <Link to="/Contact-us">
+          <Link to="/Get-Free-Consultation">
             <button
               className="px-8 py-4 rounded-full text-white font-semibold text-sm md:text-base uppercase tracking-wider hover:opacity-70 transition-opacity cursor-pointer"
               style={{

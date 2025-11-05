@@ -1,5 +1,6 @@
 import React from "react";
 import FooterLogo from "../assets/images/website-logo.png";
+import { Link } from "react-router-dom";
 import { footerData } from "../../constants/FooterData";
 import { theme } from "../../constants/theme";
 import { useNavigate } from "react-router-dom";
@@ -50,16 +51,19 @@ const Footer = () => {
             <ul className="space-y-3">
               {(columns?.[0]?.links || []).map((l, i) => (
                 <li key={i}>
-                  <a
-                    href={l.href || "#"}
+                  <Link 
+                  
+                    to={l.href || "/"}
                     className="flex text-[17px] text-gray-700 transition-all duration-200 hover:text-(--hover) hover:translate-x-1"
                     style={{
                       fontFamily: theme.fonts.body,
                       ["--hover"]: theme.colors.secondary,
                     }}
                   >
-                    {l.text}
-                  </a>
+              
+                
+                       {l.text}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -80,8 +84,9 @@ const Footer = () => {
             <ul className="space-y-3">
               {(columns?.[1]?.links || []).map((l, i) => (
                 <li key={i}>
-                  <a
-                    href={l.href || "#"}
+                  <Link
+                  
+                    tp={l.href || "/"}
                     className="flex text-[17px] text-gray-700 transition-all duration-200 hover:text-(--hover) hover:translate-x-1"
                     style={{
                       fontFamily: theme.fonts.body,
@@ -89,7 +94,8 @@ const Footer = () => {
                     }}
                   >
                     {l.text}
-                  </a>
+                  
+                  </Link>
                 </li>
               ))}
             </ul>

@@ -3,7 +3,7 @@ import { theme } from '../../constants/theme';
 import StatueImg from '../assets/images/statue.png';
 const ItalianLegalServices = () => {
   return (
-    <div className="w-full bg-[#f5f5f5] py-12 px-4 sm:px-6 lg:px-8">
+    <div className="w-full py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-[1450px] mx-auto">
         <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
           {/* Left Side - Image */}

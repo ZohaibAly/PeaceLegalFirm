@@ -56,30 +56,47 @@ const Breadcrumb = () => {
           {pageName}
         </h1>
 
-        <div className="flex items-center justify-center space-x-2">
-          <Link
-            to="/"
-            className="hover:underline transition-all duration-300"
-            style={{
-              color: "white",
-              fontFamily: theme.fonts.body,
-            }}
-          >
-            Home
-          </Link>
+<div className="flex items-center justify-center space-x-2">
+  <Link
+    to="/"
+    className="hover:underline transition-all duration-300"
+    style={{
+      color: "white",
+      fontFamily: theme.fonts.body,
+    }}
+  >
+    Home
+  </Link>
 
-          <ChevronRight size={16} style={{ color: theme.colors.secondary }} />
+  {location.pathname.startsWith("/services/") && (
+    <>
+      <ChevronRight size={16} style={{ color: theme.colors.secondary }} />
+      <span
+        style={{
+          color: theme.colors.secondary,
+          fontFamily: theme.fonts.body,
+          fontWeight: "500",
+        }}
+      >
+        Services
+      </span>
+    </>
+  )}
 
-          <span
-            style={{
-              color: theme.colors.secondary,
-              fontFamily: theme.fonts.body,
-              fontWeight: "500",
-            }}
-          >
-            {pageName}
-          </span>
-        </div>
+  <ChevronRight size={16} style={{ color: theme.colors.secondary }} />
+
+  <span
+    style={{
+      color: theme.colors.secondary,
+      fontFamily: theme.fonts.body,
+      fontWeight: "500",
+    }}
+  >
+    {pageName}
+  </span>
+</div>
+
+
       </div>
     </div>
   );
