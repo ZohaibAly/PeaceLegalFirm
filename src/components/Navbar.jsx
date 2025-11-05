@@ -15,7 +15,7 @@ const Navbar = () => {
   const serviceItems = [
     { name: 'Criminal Law', path: 'services/Criminal-Law' },
     { name: 'Company Law', path: 'services/Company-Law' },
-    { name: 'Civil Law', path: '/services/legal-consulting' },
+    { name: 'Civil Law', path: '/services/Civil-Law' },
     { name: 'Property Law', path: '/services/contract-drafting' },
     { name: 'Family Law', path: '/services/international-trade' },
     { name: 'Banking Law', path: '/services/legal-consulting' },

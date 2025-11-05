@@ -5,6 +5,7 @@ import OurLawyerPage from "../Pages/OurLawyer";
 import ContactPage from "../Pages/GetFreeConsultation";
 import CriminalLawPage from "../Pages/Services/CriminalLawPage";
 import CompanyLawPage from "../Pages/Services/CompanyLawPage";
+import CivilLawPage from '../Pages/Services/CivilLawPage';
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -29,6 +30,10 @@ export const router = createBrowserRouter([
        {
         path: "services/Company-Law",
         element: <CompanyLawPage />,
+      },
+      {
+        path: "services/Civil-Law",
+        element: <CivilLawPage />,
       },
     ],
   },

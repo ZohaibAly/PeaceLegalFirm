@@ -86,7 +86,7 @@ const Footer = () => {
                 <li key={i}>
                   <Link
                   
-                    tp={l.href || "/"}
+                    to={l.href || "/"}
                     className="flex text-[17px] text-gray-700 transition-all duration-200 hover:text-(--hover) hover:translate-x-1"
                     style={{
                       fontFamily: theme.fonts.body,

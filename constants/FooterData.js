@@ -14,22 +14,22 @@ export const footerData = {
         { text: "Home", href: "/" },
         { text: "Services", href: "/products" },
         { text: "Our Lawyers", href: "/Our-Lawyers" },
-        { text: "Get Free Consultation", href: "/Contact-us" },
+        { text: "Get Free Consultation", href: "/Get-Free-Consultation" },
       ],
     },
     {
       title: "Practice Areas",
       links: [
-        { text: "Company Law", href: "/category/pet-supplies" },
+        { text: "Company Law", href: "/services/Company-Law" },
         {
           text: "Family Law",
           href: "/category/beauty-and-personal-care",
         },
         {
           text: "Criminal Law",
-          href: "/category/electronics-and-accessories",
+          href: "/services/Criminal-Law",
         },
-        { text: "Civil Law", href: "/category/automotive-and-tools" },
+        { text: "Civil Law", href: "/services/Civil-Law" },
       ],
     },
   ],
