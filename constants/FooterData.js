@@ -18,7 +18,7 @@ export const footerData = {
       ],
     },
     {
-      title: "Services",
+      title: "Practice Areas",
       links: [
         { text: "Company Law", href: "/category/pet-supplies" },
         {
