@@ -4,6 +4,7 @@ import Navbar from "../Navbar";
 import Footer from "../Footer";
 import LazyWrapper from "../LazyWrapper/LazyWrapper";
 import ScrollToTop from "../STT";
+import WhatsAppButton from "../WhatsAppButton";
 import { Outlet } from "react-router-dom";
 
 const Layout = () => {
@@ -16,6 +17,7 @@ const Layout = () => {
         <Outlet />
       </main>
       <Footer />
+      <WhatsAppButton/>
       </LazyWrapper>
     </>
   );

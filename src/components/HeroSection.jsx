@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight } from 'lucide-react';
 import { theme } from '../../constants/theme';
 
 const HeroSection = () => {
@@ -79,10 +78,7 @@ const HeroSection = () => {
             }}
           >
             <span className="font-semibold tracking-wide uppercase">Get Free Consultation</span>
-            <ArrowRight 
-              size={20} 
-              className="transition-transform duration-300 group-hover:translate-x-1"
-            />
+           
           </Link>
         </div>
       </div>
