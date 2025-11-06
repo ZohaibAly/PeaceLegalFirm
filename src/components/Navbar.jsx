@@ -62,7 +62,7 @@ const Navbar = () => {
                   fontFamily: theme.fonts.body
                 }}
               >
-                <span>SERVICE</span>
+                <span>SERVICES</span>
                 <ChevronDown size={16} />
               </button>
               
@@ -106,7 +106,7 @@ const Navbar = () => {
                 fontFamily: theme.fonts.body
               }}
             >
-              Get Free Consultation
+              GET FREE CONSULTATION
             </Link>
 
               <Link 
@@ -117,7 +117,7 @@ const Navbar = () => {
                 fontFamily: theme.fonts.body
               }}
             >
-              About Us
+              ABOUT US
             </Link>
           </div>
 
@@ -236,7 +236,7 @@ const Navbar = () => {
                 fontFamily: theme.fonts.body
               }}
             >
-              Get Free Consultation
+               GET FREE CONSULTATION
             </Link>
 
               <Link 
@@ -248,7 +248,7 @@ const Navbar = () => {
                 fontFamily: theme.fonts.body
               }}
             >
-             About Us
+             ABOUT US
             </Link>
           </div>
         </div>
