@@ -6,7 +6,7 @@ import ChildCustodyIcon from '../assets/images/Custody.png';
 import DomesticIcon from '../assets/images/Domestic-Values.png';
 import CivilLawsuitIcon from '../assets/images/Civil-Unions.png';
 import BusinessLawIcon from '../assets/images/Business-Law.png';
-import PropertyCrimeIcon from '../assets/images/Property-crime.png';
+import PropertyCrimeIcon from '../assets/images/Property-Crime.png';
 
 const PracticeAreas = () => {
   const practiceItems = [
