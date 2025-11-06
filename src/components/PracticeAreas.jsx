@@ -48,7 +48,7 @@ const PracticeAreas = () => {
             Practice Areas
           </h2>
           <div 
-            className="h-1 w-40 mx-auto mb-8"
+            className="h-1 w-41 mx-auto mb-8"
             style={{
               backgroundColor: theme.colors.secondary,
             }}
