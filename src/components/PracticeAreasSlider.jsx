@@ -2,12 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { theme } from '../../constants/theme';
 
 // Import images
-import CriminalLawImg from '../assets/images/Criminal law.png';
-import ChildCustodyImg from '../assets/images/Child custody.png';
-import DomesticImg from '../assets/images/Domestic violence.png';
-import CivilUnionImg from '../assets/images/civil union.png';
-import BusinessLawImg from '../assets/images/business law.png';
-import PropertyCrimeImg from '../assets/images/property crime.png';
+import CriminalLawImg from '../assets/images/Practice-Criminal-law.png';
+import ChildCustodyImg from '../assets/images/Practice-Child-Custody.png';
+import DomesticImg from '../assets/images/Practice-Domestic-Violence.png';
+import CivilUnionImg from '../assets/images/Practice-Civil-Union.png';
+import BusinessLawImg from '../assets/images/Practice-Business-Law.png';
+import PropertyCrimeImg from '../assets/images/Practice-Property-Crime.png';
 
 const PracticeAreasSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);

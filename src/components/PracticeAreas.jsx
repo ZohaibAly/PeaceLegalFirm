@@ -2,11 +2,11 @@ import React from 'react';
 import { theme } from '../../constants/theme';
 import PracticeBg from '../assets/images/practice-bg.png';
 import CriminalLawIcon from '../assets/images/Criminal-Law.png';
-import ChildCustodyIcon from '../assets/images/child-custody.png';
+import ChildCustodyIcon from '../assets/images/Child-Custody.png';
 import DomesticIcon from '../assets/images/Domestic-Values.png';
 import CivilLawsuitIcon from '../assets/images/Civil-Unions.png';
 import BusinessLawIcon from '../assets/images/Business-Law.png';
-import PropertyCrimeIcon from '../assets/images/Property-Crime.png';
+import PropertyCrimeIcon from '../assets/images/Property-crime.png';
 
 const PracticeAreas = () => {
   const practiceItems = [
@@ -47,9 +47,14 @@ const PracticeAreas = () => {
           >
             Practice Areas
           </h2>
-          
+          <div 
+            className="h-1 w-40 mx-auto mb-8"
+            style={{
+              backgroundColor: theme.colors.secondary,
+            }}
+          />
           <p 
-            className="text-white text-sm md:text-lg leading-relaxed max-w-5xl mx-auto"
+            className="text-white text-sm md:text-lg leading-relaxed max-w-5xl mx-auto text-center"
             style={{ fontFamily: theme.fonts.body }}
           >
             At Peace Law, we specialize in providing expert legal consulting across a broad range of practice areas. Our team of seasoned professionals delivers strategic guidance and innovative solutions tailored to your unique needs. Whether you require assistance with corporate governance, compliance, dispute resolution, or regulatory matters, we leverage our global expertise and in-depth knowledge to navigate complex legal landscapes effectively. Committed to excellence and dedicated to your success, we offer personalized service to help you achieve your objectives with confidence.
@@ -76,20 +81,14 @@ const PracticeAreas = () => {
                 
                 {/* Main circle */}
                 <div 
-                  className="relative w-24 h-24 md:w-28 md:h-28 bg-white rounded-full flex items-center justify-center group-hover:scale-110 transition-all duration-300"
+                  className="relative w-24 h-24 md:w-28 md:h-28 rounded-full flex items-center justify-center group-hover:scale-110 transition-all duration-300"
                   style={{
                     border: `4px solid ${theme.colors.secondary}20`,
-                    boxShadow: `0 8px 30px rgba(0, 0, 0, 0.3), 0 0 0 8px ${theme.colors.secondary}10`
+                    boxShadow: `0 8px 30px rgba(0, 0, 0, 0.3), 0 0 0 8px ${theme.colors.secondary}10`,
+                    background: theme.colors.secondary,
                   }}
                 >
-                  {/* Inner orange ring on hover */}
-                  <div 
-                    className="absolute inset-0 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                    style={{
-                      border: `3px solid ${theme.colors.secondary}`,
-                      transform: 'scale(1.1)'
-                    }}
-                  ></div>
+
                   
                   <img 
                     src={item.icon}
