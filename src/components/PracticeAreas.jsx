@@ -2,7 +2,7 @@ import React from 'react';
 import { theme } from '../../constants/theme';
 import PracticeBg from '../assets/images/practice-bg.png';
 import CriminalLawIcon from '../assets/images/Criminal-Law.png';
-import ChildCustodyIcon from '../assets/images/Child-Custody.png';
+import ChildCustodyIcon from '../assets/images/Custody.png';
 import DomesticIcon from '../assets/images/Domestic-Values.png';
 import CivilLawsuitIcon from '../assets/images/Civil-Unions.png';
 import BusinessLawIcon from '../assets/images/Business-Law.png';
