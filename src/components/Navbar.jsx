@@ -39,7 +39,7 @@ const Navbar = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden lg:flex items-center space-x-8">
             <Link 
               to="/" 
               className="px-6 py-2 rounded-full transition-all duration-300"
@@ -108,12 +108,23 @@ const Navbar = () => {
             >
               Get Free Consultation
             </Link>
+
+              <Link 
+              to="/About-Us" 
+              className="transition-colors duration-300 font-medium hover:text-orange-500"
+              style={{ 
+                color: location.pathname === '/About-Us' ? theme.colors.secondary : theme.colors.primary,
+                fontFamily: theme.fonts.body
+              }}
+            >
+              About Us
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
           <button 
             onClick={toggleMenu}
-            className="md:hidden p-2"
+            className="lg:hidden p-2"
             style={{ color: theme.colors.primary }}
           >
             {isOpen ? <X size={28} /> : <Menu size={28} />}
@@ -123,7 +134,7 @@ const Navbar = () => {
 
       {/* Mobile Menu Overlay */}
       <div 
-        className={`fixed inset-0 bg-black bg-opacity-50 transition-opacity duration-300 md:hidden ${
+        className={`fixed inset-0 bg-black bg-opacity-50 transition-opacity duration-300 lg:hidden ${
           isOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
         }`}
         onClick={toggleMenu}
@@ -132,7 +143,7 @@ const Navbar = () => {
 
       {/* Mobile Menu Sidebar */}
       <div 
-        className={`fixed top-0 right-0 h-full w-80 bg-white shadow-2xl transform transition-transform duration-300 ease-in-out md:hidden ${
+        className={`fixed top-0 right-0 h-full w-80 bg-white shadow-2xl transform transition-transform duration-300 ease-in-out lg:hidden ${
           isOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
@@ -221,11 +232,23 @@ const Navbar = () => {
               onClick={toggleMenu}
               className="px-6 py-3 font-medium"
               style={{ 
-                color: location.pathname === '/Contact-us' ? theme.colors.secondary : theme.colors.primary,
+                color: location.pathname === '/Get-Free-Consultation' ? theme.colors.secondary : theme.colors.primary,
                 fontFamily: theme.fonts.body
               }}
             >
               Get Free Consultation
+            </Link>
+
+              <Link 
+              to="/About-Us" 
+              onClick={toggleMenu}
+              className="px-6 py-3 font-medium"
+              style={{ 
+                color: location.pathname === '/About-Us' ? theme.colors.secondary : theme.colors.primary,
+                fontFamily: theme.fonts.body
+              }}
+            >
+             About Us
             </Link>
           </div>
         </div>

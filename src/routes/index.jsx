@@ -10,6 +10,7 @@ import PropertyLawPage from "../Pages/Services/PropertyLawPage";
 import FamilyLawPage from "../Pages/Services/FamilyLawPage";
 import BankingLawPage from "../Pages/Services/BankingLawPage";
 import CorporateLawPage from '../Pages/Services/CorporateLawPage';
+import AboutUsPage from '../Pages/AboutUs';
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -54,6 +55,10 @@ export const router = createBrowserRouter([
        {
         path: "services/Corporate-Law",
         element: <CorporateLawPage />,
+      },
+       {
+        path: "/About-Us",
+        element: <AboutUsPage />,
       },
     ],
   },

@@ -12,7 +12,7 @@ export const footerData = {
       title: "Quick Menu",
       links: [
         { text: "Home", href: "/" },
-        { text: "Services", href: "/products" },
+        { text: "About Us", href: "/About-Us" },
         { text: "Our Lawyers", href: "/Our-Lawyers" },
         { text: "Get Free Consultation", href: "/Get-Free-Consultation" },
       ],
