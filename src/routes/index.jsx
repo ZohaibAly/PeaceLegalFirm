@@ -6,6 +6,10 @@ import ContactPage from "../Pages/GetFreeConsultation";
 import CriminalLawPage from "../Pages/Services/CriminalLawPage";
 import CompanyLawPage from "../Pages/Services/CompanyLawPage";
 import CivilLawPage from '../Pages/Services/CivilLawPage';
+import PropertyLawPage from "../Pages/Services/PropertyLawPage";
+import FamilyLawPage from "../Pages/Services/FamilyLawPage";
+import BankingLawPage from "../Pages/Services/BankingLawPage";
+import CorporateLawPage from '../Pages/Services/CorporateLawPage';
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -34,6 +38,22 @@ export const router = createBrowserRouter([
       {
         path: "services/Civil-Law",
         element: <CivilLawPage />,
+      },
+      {
+        path: "services/Property-Law",
+        element: <PropertyLawPage />,
+      },
+       {
+        path: "services/Family-Law",
+        element: <FamilyLawPage />,
+      },
+      {
+        path: "services/Banking-Law",
+        element: <BankingLawPage />,
+      },
+       {
+        path: "services/Corporate-Law",
+        element: <CorporateLawPage />,
       },
     ],
   },

@@ -16,10 +16,10 @@ const Navbar = () => {
     { name: 'Criminal Law', path: 'services/Criminal-Law' },
     { name: 'Company Law', path: 'services/Company-Law' },
     { name: 'Civil Law', path: '/services/Civil-Law' },
-    { name: 'Property Law', path: '/services/contract-drafting' },
-    { name: 'Family Law', path: '/services/international-trade' },
-    { name: 'Banking Law', path: '/services/legal-consulting' },
-    { name: 'Corporate Law/NOC', path: '/services/contract-drafting' },
+    { name: 'Property Law', path: '/services/Property-Law' },
+    { name: 'Family Law', path: '/services/Family-Law' },
+    { name: 'Banking Law', path: '/services/Banking-Law' },
+    { name: 'Corporate Law/NOC', path: '/services/Corporate-Law' },
   ];
 
   // Check if current path is a service page
@@ -217,7 +217,7 @@ const Navbar = () => {
             </Link>
 
             <Link 
-              to="/Contact-us" 
+              to="/Get-Free-Consultation" 
               onClick={toggleMenu}
               className="px-6 py-3 font-medium"
               style={{ 
@@ -225,7 +225,7 @@ const Navbar = () => {
                 fontFamily: theme.fonts.body
               }}
             >
-              CONTACT
+              Get Free Consultation
             </Link>
           </div>
         </div>

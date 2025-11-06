@@ -23,7 +23,7 @@ export const footerData = {
         { text: "Company Law", href: "/services/Company-Law" },
         {
           text: "Family Law",
-          href: "/category/beauty-and-personal-care",
+          href: "/services/Family-Law",
         },
         {
           text: "Criminal Law",
