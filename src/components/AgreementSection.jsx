@@ -34,7 +34,7 @@ const AgreementSection = ({ imageSrc }) => {
             
             {/* Orange Underline */}
             <div 
-              className="w-32 h-1 mb-8"
+              className="w-40 h-1 mb-8 mt-3"
               style={{ backgroundColor: theme.colors.secondary }}
             ></div>
             
