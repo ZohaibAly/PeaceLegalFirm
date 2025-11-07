@@ -9,6 +9,7 @@ import LegalHeroSection from "../components/LegalHeroSection";
 import ItalianLegalServices from "../components/ItalianLegalServices";
 import PeaceTimeLine from '../components/PeaceLawTimeline';
 import ContactInfoSection from "../components/ContactInfoSection";
+import AgreementSection from "../components/AgreementSection";
 const HomePage = () => {
   return (
     <>
@@ -17,6 +18,7 @@ const HomePage = () => {
       <CEOProfile/>
       <PracticeAreas/>
       <PracticeAreasSlider/>
+      <AgreementSection/>
       <ExperienceSection/>
       <LegalHeroSection/>
       <ItalianLegalServices/>

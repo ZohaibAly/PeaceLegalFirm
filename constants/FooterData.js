@@ -22,8 +22,8 @@ export const footerData = {
       links: [
         { text: "Company Law", href: "/services/Company-Law" },
         {
-          text: "Family Law",
-          href: "/services/Family-Law",
+          text: "Corporate Law",
+          href: "/services/Corporate-Law",
         },
         {
           text: "Criminal Law",

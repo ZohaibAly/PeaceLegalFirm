@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { theme } from '../../constants/theme';
 import StatueImg from '../assets/images/statue.png';
 const ItalianLegalServices = () => {
@@ -72,9 +73,9 @@ const ItalianLegalServices = () => {
               focusing on trust, transparency, and personalized service. Our commitment goes beyond 
               legal representation.
             </p>
-
-            <a 
-              href="/about"
+<Link
+           
+              to="/About-Us"
               className="inline-block px-8 py-3 text-white font-medium transition-all duration-300 hover:opacity-90"
               style={{ 
                 backgroundColor: theme.colors.primary,
@@ -82,7 +83,8 @@ const ItalianLegalServices = () => {
               }}
             >
               MORE ABOUT US
-            </a>
+            
+            </Link>
           </div>
         </div>
       </div>

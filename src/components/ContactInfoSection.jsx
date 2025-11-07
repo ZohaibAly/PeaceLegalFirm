@@ -11,8 +11,8 @@ const ContactInfoSection = () => {
     {
       icon: HeadOfficeIcon,
       title: "Head Office",
-      line1: "Peace International Law Firm",
-      line2: "Mazang 4 Near Family hospital High",
+      line1: "Al-Adl Building, Behind",
+      line2: "Punjab Bar Counsil, Near",
       line3: "Court Lahore",
     },
     {

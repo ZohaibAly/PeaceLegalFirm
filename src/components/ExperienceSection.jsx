@@ -15,7 +15,7 @@ const ExperienceSection = () => {
     },
     {
       icon: CasesImg,
-      number: "190+",
+      number: "5000+",
       label: "Cases Done",
     },
     {
