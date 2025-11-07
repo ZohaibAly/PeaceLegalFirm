@@ -1,21 +1,21 @@
 import React from 'react';
 import { theme } from '../../constants/theme';
 import PracticeBg from '../assets/images/practice-bg.png';
-import CriminalLawIcon from '../assets/images/Criminal-Law.png';
-import ChildCustodyIcon from '../assets/images/Custody.png';
-import DomesticIcon from '../assets/images/Domestic-Values.png';
-import CivilLawsuitIcon from '../assets/images/Civil-Unions.png';
-import BusinessLawIcon from '../assets/images/Business-Law.png';
-import PropertyCrimeIcon from '../assets/images/Property-Crime.png';
+import CriminalLawIcon from '../assets/images/Ciminal-Law.png';
+import CivilLawIcon from '../assets/images/Civil-Law.png';
+import OverSeaLawIcon from '../assets/images/Overseas-Law.png';
+import TexationLawIcon from '../assets/images/Taxation-Law.png';
+import FamilyLawIcon from '../assets/images/Family-Law.png';
+import PropertyLawIcon from '../assets/images/Property-Law.png';
 
 const PracticeAreas = () => {
   const practiceItems = [
     { icon: CriminalLawIcon, title: 'Criminal Law' },
-    { icon: ChildCustodyIcon, title: 'Child Custody' },
-    { icon: DomesticIcon, title: 'Domestic Values' },
-    { icon: CivilLawsuitIcon, title: 'Civil Union' },
-    { icon: BusinessLawIcon, title: 'Business Law' },
-    { icon: PropertyCrimeIcon, title: 'Property Crime' },
+    { icon: CivilLawIcon, title: 'Civil Law' },
+    { icon: OverSeaLawIcon, title: ' Overseas Pakistani Issues ( Oblique / loss)' },
+    { icon: TexationLawIcon, title: 'Taxation Law' },
+    { icon: FamilyLawIcon, title: 'Family Law' },
+    { icon: PropertyLawIcon, title: 'Property Law' },
   ];
 
   return (

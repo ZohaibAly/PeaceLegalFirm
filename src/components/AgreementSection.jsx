@@ -12,7 +12,7 @@ const AgreementSection = ({ imageSrc }) => {
   ];
 
   return (
-    <div className="relative w-full h-[600px]">
+    <div className="relative w-full h-[750px]">
       {/* Background Image */}
       <img 
         src={AgreementImg} 
