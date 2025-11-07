@@ -1,11 +1,11 @@
 import React from 'react';
 import { theme } from '../../constants/theme';
 import TeamBgImage from '../assets/images/PromiseSectionBg.png';
-import RanaAlmaasImg from '../assets/images/Teampic1.png';
-import ZahidKhokharImg from '../assets/images/Teampic2.png';
-import MJabranImg from '../assets/images/Teampic3.png';
-import MissKanwalImg from '../assets/images/Teampic4.png';
-import MissMehwishImg from '../assets/images/Teampic5.png';
+import RanaAlmaasImg from '../assets/images/RanaAlmaasImg.png';
+import ZahidKhokharImg from '../assets/images/ZahidKhokharImg.png';
+import MJabranImg from '../assets/images/MJabranImg.png';
+import MissKanwalImg from '../assets/images/MissKanwalImg.png';
+import MissMehwishImg from '../assets/images/MissMehwishImg.png';
 
 const MeetOurTeam = () => {
 const teamMembers = [
