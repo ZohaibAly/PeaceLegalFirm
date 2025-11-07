@@ -3,90 +3,89 @@ import { theme } from '../../constants/theme';
 
 // Import images
 import CriminalLawImg from '../assets/images/Practice-Criminal-law.png';
-import ChildCustodyImg from '../assets/images/Practice-Child-Custody.png';
-import DomesticImg from '../assets/images/Practice-Domestic-Violence.png';
-import CivilUnionImg from '../assets/images/Practice-Civil-Union.png';
-import BusinessLawImg from '../assets/images/Practice-Business-Law.png';
-import PropertyCrimeImg from '../assets/images/Practice-Property-Crime.png';
+import CivilLawImg from '../assets/images/Practice-Civil-Law.png';
+import OverSeaLawImg from '../assets/images/Practice-Oversea-Law.png';
+import TexationLawImg from '../assets/images/Practice-Texation-Law.png';
+import FamilyLawImg from '../assets/images/Practice-Family-Law.png';
+import PropertyLawImg from '../assets/images/Practice-Property-Law.png';
 
 const PracticeAreasSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  const slides = [
-    {
-      title: 'Criminal Law',
-      mainImage: CriminalLawImg,
-      description: 'At Peace International Law & Consulting Firm, our criminal law practice is dedicated to upholding justice and protecting the rights of individuals facing criminal charges. We provide strategic representation, guiding clients through every stage of the legal process from investigation to trial and appeal with integrity and precision.',
-      points: [
-        'Expertise in minor to major criminal cases',
-        'Comprehensive legal guidance throughout proceedings',
-        'Strategic defense and prosecution services',
-        'Focus on safeguarding client rights',
-        'Commitment to fair, ethical, and just outcomes'
-      ]
-    },
-    {
-      title: 'Child Custody',
-      mainImage: ChildCustodyImg,
-      description: 'Our child custody practice prioritizes the best interests of children while protecting parental rights. We provide compassionate legal guidance through custody disputes, visitation arrangements, and family law matters with sensitivity and expertise.',
-      points: [
-        'Best interest of child focused approach',
-        'Mediation and negotiation services',
-        'Custody modification assistance',
-        'Parental rights protection',
-        'Court representation and advocacy'
-      ]
-    },
-    {
-      title: 'Domestic Values',
-      mainImage: DomesticImg,
-      description: 'We handle domestic matters with care and professionalism, ensuring families receive the legal support they need during challenging times. Our approach combines legal expertise with understanding of family dynamics.',
-      points: [
-        'Family law consultation',
-        'Divorce proceedings assistance',
-        'Property settlement guidance',
-        'Spousal support matters',
-        'Confidential and respectful service'
-      ]
-    },
-    {
-      title: 'Civil Union',
-      mainImage: CivilUnionImg,
-      description: 'Our civil union practice provides comprehensive legal services for partnership agreements, civil unions, and related legal matters. We ensure your rights and interests are protected throughout the process.',
-      points: [
-        'Partnership agreement drafting',
-        'Civil union registration',
-        'Rights and obligations clarification',
-        'Dissolution proceedings',
-        'Property and asset protection'
-      ]
-    },
-    {
-      title: 'Business Law',
-      mainImage: BusinessLawImg,
-      description: 'We provide strategic business law services to help companies navigate complex legal landscapes. From formation to dissolution, our team supports your business growth and protects your interests.',
-      points: [
-        'Corporate formation and structuring',
-        'Contract drafting and review',
-        'Regulatory compliance guidance',
-        'Business dispute resolution',
-        'Mergers and acquisitions support'
-      ]
-    },
-    {
-      title: 'Property Crime',
-      mainImage: PropertyCrimeImg,
-      description: 'Our property crime defense practice offers robust representation for individuals facing property-related criminal charges. We develop strategic defenses and work tirelessly to protect your rights and future.',
-      points: [
-        'Theft and burglary defense',
-        'Property damage cases',
-        'Fraud and embezzlement representation',
-        'Asset forfeiture defense',
-        'Comprehensive case investigation'
-      ]
-    }
-  ];
-
+const slides = [
+  {
+    title: 'Criminal Law',
+    mainImage: CriminalLawImg,
+    description: 'At Peace International Law & Consulting Firm, our criminal law practice provides robust defense and prosecution services under Pakistan Penal Code (PPC). We represent clients in sessions courts, high courts, and Supreme Court with expertise in handling cases from investigation to appeals.',
+    points: [
+      'Defense in PPC offenses including murder, theft, and fraud',
+      'Bail applications and pre-arrest bail representation',
+      'Trial court representation in sessions and magistrate courts',
+      'Appeals in High Courts and Supreme Court of Pakistan',
+      'White-collar crime and cybercrime defense under PECA'
+    ]
+  },
+  {
+    title: 'Civil Law',
+    mainImage: CivilLawImg,
+    description: 'Our civil law practice covers a wide range of disputes under the Civil Procedure Code (CPC) 1908. We handle contract disputes, property matters, tort claims, and civil litigation in district courts, high courts, and appellate forums across Pakistan.',
+    points: [
+      'Contract enforcement and breach of contract cases',
+      'Civil suits for declaration, injunction, and specific performance',
+      'Tort claims including negligence and defamation',
+      'Recovery suits and debt collection',
+      'Civil appeals and revision petitions in superior courts'
+    ]
+  },
+  {
+    title: 'Overseas Pakistani Issues',
+    mainImage: OverSeaLawImg,
+    description: 'We specialize in legal matters affecting overseas Pakistanis including property disputes, inheritance claims, NADRA documentation, and repatriation issues. Our team provides remote consultation and representation to protect the rights of non-resident Pakistanis.',
+    points: [
+      'Property disputes and illegal occupation cases for overseas clients',
+      'NADRA NICOP, POC, and citizenship documentation',
+      'Inheritance and succession matters under Muslim Family Laws',
+      'Power of attorney drafting and authentication',
+      'Investment disputes and business representation in Pakistan'
+    ]
+  },
+  {
+    title: 'Taxation Law',
+    mainImage: TexationLawImg,
+    description: 'Our taxation law practice provides comprehensive advisory and litigation services under Income Tax Ordinance 2001, Sales Tax Act 1990, and Federal Excise Act. We represent clients before FBR, tax tribunals, and superior courts in tax disputes and compliance matters.',
+    points: [
+      'Income tax, sales tax, and federal excise advisory',
+      'Tax audit defense and assessment appeals',
+      'Representation before Commissioner Appeals and ATIR',
+      'Tax litigation in High Courts and Supreme Court',
+      'Transfer pricing and international taxation matters'
+    ]
+  },
+  {
+    title: 'Family Law',
+    mainImage: FamilyLawImg,
+    description: 'Our family law practice addresses sensitive matters under Muslim Family Laws Ordinance 1961, Guardians and Wards Act, and related legislation. We provide compassionate legal guidance in divorce, custody, maintenance, and inheritance disputes in family courts across Pakistan.',
+    points: [
+      'Khula, talaq, and divorce proceedings in family courts',
+      'Child custody and guardianship matters under Guardians Act',
+      'Maintenance and alimony claims (nafaqah)',
+      'Inheritance disputes and succession certificates',
+      'Domestic violence protection orders and family settlements'
+    ]
+  },
+  {
+    title: 'Property Law',
+    mainImage: PropertyLawImg,
+    description: 'We handle all aspects of property law including title verification, transfer of ownership, land disputes, and property litigation. Our expertise covers matters under Transfer of Property Act 1882, Land Revenue Act, and Punjab Land Records Authority (PLRA) regulations.',
+    points: [
+      'Title verification and due diligence for property transactions',
+      'Sale deeds, gift deeds, and transfer documentation',
+      'Property disputes, partition suits, and boundary conflicts',
+      'PLRA and land record rectification matters',
+      'Real estate litigation and possession recovery suits'
+    ]
+  }
+];
   // ✅ Auto-slide every 4 seconds
   useEffect(() => {
     const interval = setInterval(() => {
