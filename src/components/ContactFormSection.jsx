@@ -36,7 +36,7 @@ export default function LawyerContactForm() {
       <div className="w-full sm:w-[95%] md:w-[95%] lg:w-[1000px] xl:w-[1100px] h-auto flex items-center mx-auto justify-center px-4 sm:px-6 md:px-8 py-8 md:py-10 lg:py-12" style={{ backgroundColor: theme.colors.primary }}>
         <div className="w-full max-w-5xl">
           {/* Form Container - Side by Side */}
-          <div className="flex flex-col-reverse lg:flex-row gap-8 md:gap-16 items-start">
+          <div className="flex flex-col lg:flex-row gap-8 md:gap-16 items-start">
             {/* Left Side - Form Fields */}
             <div className="flex-1 space-y-4">
               <input
@@ -114,7 +114,7 @@ export default function LawyerContactForm() {
               </p>
               <button
                 onClick={handleSubmit}
-                className="px-8 py-4 rounded-md text-white font-semibold uppercase tracking-wide hover:opacity-90 transition-opacity"
+                className="px-8 py-4 rounded-md text-white font-semibold uppercase tracking-wide hover:opacity-90 transition-opacity cursor-pointer"
                 style={{ 
                   backgroundColor: theme.colors.secondary,
                   fontFamily: theme.fonts.body

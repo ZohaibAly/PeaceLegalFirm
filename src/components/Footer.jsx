@@ -129,7 +129,7 @@ const Footer = () => {
 
             
             
-
+<Link to='/Get-Free-Consultation'>
                 <button
                   type="submit"
                   className="w-full mt-4 px-6 py-3 font-semibold text-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 cursor-pointer"
@@ -140,7 +140,7 @@ const Footer = () => {
                 >
                   {newsletter?.buttonText || "Subscribe"}
                 </button>
-              
+              </Link>
             </div>
           </div>
         </div>
