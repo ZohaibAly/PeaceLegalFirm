@@ -12,7 +12,7 @@ const PracticeAreas = () => {
   const practiceItems = [
     { icon: CriminalLawIcon, title: 'Criminal Law' },
     { icon: CivilLawIcon, title: 'Civil Law' },
-    { icon: OverSeaLawIcon, title: ' Overseas Pakistani Issues ( Oblique / loss)' },
+    { icon: OverSeaLawIcon, title: ' Overseas Pakistani Issues(Oblique/loss)' },
     { icon: TexationLawIcon, title: 'Taxation Law' },
     { icon: FamilyLawIcon, title: 'Family Law' },
     { icon: PropertyLawIcon, title: 'Property Law' },
@@ -62,7 +62,7 @@ const PracticeAreas = () => {
         </div>
 
         {/* Practice Areas Grid */}
-        <div className="flex flex-wrap justify-center gap-8 md:gap-12 max-w-6xl mx-auto">
+        <div className="flex flex-wrap justify-center gap-8 md:gap-12 max-w-6xl mx-auto px-4 py-8">
           {practiceItems.map((item, index) => (
             <div 
               key={index}
@@ -70,21 +70,13 @@ const PracticeAreas = () => {
             >
               {/* Icon Circle with Enhanced Design */}
               <div className="relative mb-5">
-                {/* Outer glow ring */}
-                <div 
-                  className="absolute inset-0 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                  style={{
-                    background: `radial-gradient(circle, ${theme.colors.secondary}40, transparent 70%)`,
-                    transform: 'scale(1.5)'
-                  }}
-                ></div>
                 
                 {/* Main circle */}
                 <div 
                   className="relative w-24 h-24 md:w-28 md:h-28 rounded-full flex items-center justify-center group-hover:scale-110 transition-all duration-300"
                   style={{
-                    border: `4px solid ${theme.colors.secondary}20`,
-                    boxShadow: `0 8px 30px rgba(0, 0, 0, 0.3), 0 0 0 8px ${theme.colors.secondary}10`,
+         
+
                     background: theme.colors.secondary,
                   }}
                 >
@@ -93,7 +85,7 @@ const PracticeAreas = () => {
                   <img 
                     src={item.icon}
                     alt={item.title}
-                    className="w-14 h-14 md:w-16 md:h-16 object-contain rounded-full relative z-10 group-hover:scale-110 transition-transform duration-300"
+                    className="w-14 h-14 md:w-16 md:h-16 object-contain relative z-10 group-hover:scale-110 transition-transform duration-300"
                   />
                 </div>
               </div>

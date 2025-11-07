@@ -111,30 +111,24 @@ const Footer = () => {
                   color: theme.colors.primary,
                 }}
               >
-                Join Our Legal Community
+              Ready to Start Your Project?
               </p>
 
               <p
                 className="text-sm text-gray-600 mb-5"
                 style={{ fontFamily: theme.fonts.body }}
               >
-                Get valuable updates on immigration laws, legal rights, and
-                upcoming firm events - straight to your inbox
+                Connect with us! Get updates, insights, and stories from our journey - straight to your inbox.
+              </p>
+               <p
+                className="text-sm text-gray-600 mb-5"
+                style={{ fontFamily: theme.fonts.body }}
+              >
+                Have questions or want to discuss your needs? Reach out to us - w'e here to help you get started.
               </p>
 
-              <form onSubmit={handleSubscribe}>
-                <div className="relative">
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    placeholder={newsletter?.placeholder || "Enter your email"}
-                    className="block w-full px-4 py-3 text-gray-900 placeholder-gray-400 bg-gray-50 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-(--ring) focus:border-transparent transition-all"
-                    style={{
-                      ["--ring"]: theme.colors.secondary,
-                    }}
-                  />
-                </div>
+            
+            
 
                 <button
                   type="submit"
@@ -146,7 +140,7 @@ const Footer = () => {
                 >
                   {newsletter?.buttonText || "Subscribe"}
                 </button>
-              </form>
+              
             </div>
           </div>
         </div>
