@@ -6,7 +6,7 @@ const OurStory = () => {
   return (
     <section className="w-full py-16 px-4 md:px-8 lg:px-12">
       <div className="max-w-[1150px] mx-auto">
-        <div className="flex flex-wrap items-center gap-12 lg:gap-16">
+        <div className="flex flex-wrap-reverse items-center gap-12 lg:gap-16">
           
           {/* Left Side - Image */}
           <div className="w-full lg:w-5/12 flex justify-center lg:justify-start">
