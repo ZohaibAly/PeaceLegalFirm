@@ -97,7 +97,16 @@ const Navbar = () => {
             >
               OUR LAWYERS
             </Link>
-
+   <Link 
+              to="/About-Us" 
+              className="transition-colors duration-300 font-medium hover:text-orange-500"
+              style={{ 
+                color: location.pathname === '/About-Us' ? theme.colors.secondary : theme.colors.primary,
+                fontFamily: theme.fonts.body
+              }}
+            >
+              ABOUT US
+            </Link>
             <Link 
               to="/Get-Free-Consultation" 
               className="transition-colors duration-300 font-medium hover:text-orange-500"
@@ -109,16 +118,7 @@ const Navbar = () => {
               GET FREE CONSULTATION
             </Link>
 
-              <Link 
-              to="/About-Us" 
-              className="transition-colors duration-300 font-medium hover:text-orange-500"
-              style={{ 
-                color: location.pathname === '/About-Us' ? theme.colors.secondary : theme.colors.primary,
-                fontFamily: theme.fonts.body
-              }}
-            >
-              ABOUT US
-            </Link>
+           
           </div>
 
           {/* Mobile Menu Button */}
