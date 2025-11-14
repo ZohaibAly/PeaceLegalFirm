@@ -85,6 +85,8 @@ export default function LawyerContactForm() {
                 <option value="family">Family Law</option>
                 <option value="corporate">Corporate Law</option>
                 <option value="property">Property Law</option>
+                    <option value="company">Company Law</option>
+                <option value="banking">Banking Law</option>
               </select>
               
               <textarea
